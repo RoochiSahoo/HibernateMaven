@@ -26,6 +26,7 @@ public class HibernateMAin
     	p.setBrand("wp");
     	p.setPrice(200.00f);
     	session.save(p);
+    	System.out.println("product is saved");
     	transaction.commit();
     	session.close();
     }
